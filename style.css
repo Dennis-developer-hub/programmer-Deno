@@ -1,0 +1,312 @@
+/* General styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f9f9f9;
+  color: #333;
+}
+
+/* Header and navigation */
+header {
+ background: #1e3a8a;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+/* Logo styling */
+.logo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%; /* makes it circular */
+  object-fit: cover;
+  margin-bottom: 10px;
+  border: 3px solid #fff;
+
+}
+
+
+
+nav a {
+  color: #fff;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #ff9800;
+}
+
+/* Section content */
+section {
+  padding: 50px;
+  text-align: center;
+}
+.home-hero {
+  background: linear-gradient(135deg, #1e3a8a, #9333ea); /* blue to purple */
+  color: #fff;
+  padding: 100px 20px;
+  text-align: center;
+  border-radius: 0 0 30px 30px; /* curved bottom */
+
+ 
+}
+
+
+
+.home-hero h2 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.home-hero p {
+  font-size: 1.2em;
+  max-width: 600px;
+  margin: 0 auto;
+}
+/* buttons */
+button{
+  background-color: green;
+  padding: 12px;
+ 
+  margin: 5px;
+  width: 40%;
+  font-size: 25px;
+  border-radius: 12px;
+  animation: btn 1s infinite;
+}
+@keyframes btn{
+  10%{background-color: green;}
+  25%{background-color: red;}
+  50%{background-color: purple;}
+  100%{background-color: orange;}
+}
+button a{
+  color: white;
+  text-decoration: none;
+}
+button:hover{
+  background-color: black;
+}
+
+/* Profile picture styling */
+.profile-pic {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 20px auto;
+  display: block;
+  border: 4px solid #1e3a8a;
+ 
+}
+/* About Section */
+.about {
+    display: flex;
+    flex-direction: column; /* Stack items on small screens */
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+    text-align: center;
+}
+.about-img img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #0077b6;
+    margin-bottom: 20px;
+}
+.about-text {
+    max-width: 700px;
+}
+
+.about-text h2 {
+    color: #0077b6;
+    margin-bottom: 15px;
+}
+ 
+
+
+.about-text h2 {
+    color: #0077b6;
+    margin-bottom: 15px;
+}
+
+.about-text p {
+    margin-bottom: 20px;
+}
+
+.about-text ul {
+    list-style: none;
+    padding: 0;
+}
+
+.about-text ul li {
+    background: #e3f2fd;
+    margin: 8px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Project boxes */
+.project {
+  background: #fff;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 600px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  text-align: left;
+}
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.project h2 {
+  color: #1e3a8a;
+  margin-bottom: 10px;
+}
+
+.project p {
+  font-size: 0.95em;
+  color: #555;
+}
+
+/* Hover effect */
+.project:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+  border-top: 5px solid #ff9800;
+}
+
+
+
+/* Contact info styling */
+.contact-info {
+  margin-top: 20px;
+  font-size: 1.1em;
+}
+
+.contact-info a {
+  color: #1e3a8a;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.contact-info a:hover {
+  color: #ff9800;
+}
+.whatsapp-button {
+  display: inline-block;
+  background-color: #25D366; /* WhatsApp green */
+  color: white;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.whatsapp-button:hover {
+  background-color: #1ebe5d;
+}
+/* appreciation */
+.appreciation{
+  background-color: #25D366;
+  padding: 60px;
+  text-align: center;
+  font-size: 40px;
+}
+
+footer {
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 20px;
+}
+
+footer a {
+  color: #1e90ff;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* ========== Responsive Design ========== */
+@media (max-width: 768px) {
+  header {
+    text-align: center;
+    padding: 15px;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  nav a {
+    display: block;
+    padding: 8px;
+    background: #1e3a8a;
+    border-radius: 5px;
+  }
+ .about{
+  text-align: left;
+  
+ }
+
+  .home-hero {
+    padding: 60px 20px;
+  }
+
+  .home-hero h2 {
+    font-size: 2em;
+  }
+
+  .home-hero p {
+    font-size: 1em;
+  }
+
+  .projects-container {
+    grid-template-columns: 1fr; /* stack cards */
+    padding: 10px;
+  }
+
+  .project {
+    padding: 15px;
+  }
+
+  form {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 1.5em;
+  }
+
+  nav a {
+    font-size: 0.9em;
+    padding: 6px;
+  }
+
+  .home-hero h2 {
+    font-size: 1.6em;
+  }
+}
+
+
